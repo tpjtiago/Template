@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+.intro-card {
+  padding: 24px;
+}
+
+.intro-card .investir2 {
+  color: #182940;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.intro-card .aqui-voc-encontra {
+  color: #5f5f64;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.intro-card .cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-container {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.intro-card .cards-container .info-card {
+  padding: 24px 24px 0px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 256px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.intro-card .cards-container .info-container {
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.intro-card .cards-container .info-card .info-text {
+  color: #5f5f64;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.intro-card .cards-container .info-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.container-title {
+  color: #182940;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-card-title {
+  color: #182940;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.second-card-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.question-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-card .question-title {
+  color: #182940;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 330px;
+  text-align: center;
+}
+
+.question-card .qnt-label {
+  padding: 10px 14px 3px 14px;
+  border-bottom: 1px solid #2b59c3;
+  color: #2b59c3;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.question-card .minus-icon {
+  cursor: pointer;
+}
+
+.question-card .plus-icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -2px;
+}
+
+.second-card-container .check-btn-accept {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 2px solid #49454f;
+}
+
+.second-card-container .btn-close {
+  display: flex;
+  color: white;
+  width: 54px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23.5px;
+  background: #ccc;
+  padding: 12px 43px;
+  gap: 10px;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.last-question-card {
+  position: relative;
+}
+
+.last-question-card .last-info-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/** Blue more info **/
+
+.blue-container {
+  background: #2b59c3;
+}
+
+.blue-container .more-info-title {
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  text-transform: uppercase;
+}
+
+.blue-container .col-1-label {
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px; /* 142.857% */
+}
+
+.blue-container .col-2-label {
+  color: #fff;
+  text-align: right;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+.info-absolute-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.info-card-info {
+  background-color: #2b59c3;
+  padding: 24px 24px 0px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 256px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.info-card-info h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.info-card-info img {
+  position: absolute;
+  left: 220px;
+  top: 200px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.invest-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.invest-card {
+  padding-top: 24px;
+  padding-left: 36px;
+  padding-right: 36px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.invest-card img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 550px;
+  top: 10px;
+}
+
+.invest-card b {
+  color: #2b59c3;
+}
+
+.invest-card h3 {
+  font-size: 20px;
+  color: #2b59c3;
+}
+
+.invest-card h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b59c3;
+}
+
+.invest-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.invest-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.invest-card-right p {
+  font-size: 11px;
+  margin: 0;
+}
+
+.invest-card-right h6 {
+  font-size: 13px;
+  margin: 0;
+  font-weight: bold;
+  color: #2b59c3;
+}
+
+.invest-card-date {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.invest-card-date h7 {
+  font-size: 11px;
+  margin: 0;
+  color: #2b59c3;
+}
+
+.invest-card-cotacao {
+  color: #2b59c3;
+}
+
+hr.solid {
+  border-top: 1px solid #aaa;
+}
+
+.invest-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 36px;
+  gap: 20px;
+  margin: 0;
+}
+
+.invest-card-footer p {
+  margin-top: 10px;
+}
+
+.invest-card-footer button {
+  background-color: #2b59c3;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.invest-card-footer img {
+  width: 48px;
+  height: 48px;
+}
+
+.value-info-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid #ccc;
+  background-color: #2b59c3;
+  padding: 15px 30px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #fff;
+  min-height: 130px;
+}
+
+.value-info-card img {
+  position: absolute;
+  left: 560px;
+  top: 100px;
+  cursor: pointer;
+}
+
+.col-half {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-half {
+    width: 100%;
+  }
+}

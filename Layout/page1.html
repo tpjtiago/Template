@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./content/css/page1.css">
+    <link rel="stylesheet" href="./content/css/global.css">
+    <script src="./content/js/page1.js"></script>
+</head>
+<body>
+    <div class="main container">
+        <div class="card intro-card">
+            <h3 class="investir2">Porquinho Inteligente</h3>
+            <p class="aqui-voc-encontra">
+              Crie uma campanha de incentivo coletivo para os estudos de seus
+              filhos e compartilhe com a família e amigos.
+            </p>
+            <div class="cards-container mt-3">
+                <div class="card " id="card-1">
+                    <div class="info-card">
+                        <img
+                        class="attention-mark-1-icon"
+                        alt=""
+                        src="./content/asssets/networking.svg"
+                        />
+                        <p class="info-text">Você cria uma campanha para custear a faculdade do seu filho(a).</p>
+                    </div>
+                    <div class="info-container"><img src="./content/asssets/informationbutton.svg" class="info-icon" onclick="hideandshow('card-1','card-1-info')"/></div>
+                </div>
+                    <div class="info-card-info" id="card-1-info" style="display: none;">
+                        <h2>Como funciona</h2>
+                        <p>Os apoiadores podem contribuir se indentificando ou não. O valor apoiado é convertido em títulos no Tesouro Educa+ em nome da cirança.</p>
+                        <div class="info-container-info"><img src="./content/asssets/information-button.svg" class="info-icon" onclick="hideandshow('card-1','card-1-info')"/></div>
+                    </div>
+                <div class="card" id="card-2">
+                    <div class="info-card">
+                        <img
+                            class="attention-mark-1-icon"
+                            alt=""
+                            src="./content/asssets/networkingdollar.svg"
+                        />
+                        <p class="info-text">As pessoas que receberem o link podem contribuir com qualquer valor.</p>
+                    </div>
+                    <div class="info-container"><img src="./content/asssets/informationbutton.svg" class="info-icon" onclick="hideandshow('card-2','card-2-info')"/></div>
+                    </div>
+
+                    <div class="info-card-info" id="card-2-info" style="display: none;">
+                        <h2>Como funciona</h2>
+                        <p>Os valores aportados são convertidos em frações do títulos escolhidos para campanha e podem ser pagos com PIX.</p>
+                        <div class="info-container-info"><img src="./content/asssets/information-button.svg" class="info-icon" onclick="hideandshow('card-2-info','card-2')"/></div>
+                </div>
+
+
+
+                <div class="card" id="card-3">
+                    <div class="info-card">
+                        <img
+                        class="attention-mark-1-icon"
+                        alt=""
+                        src="./content/asssets/education.svg"
+                  />
+                    <p class="info-text">Ao fazer 18 anos inicia os recebimentos mensais
+                        para pagar a faculdade.</p>
+                    </div>
+                    <div class="info-container"><img src="./content/asssets/informationbutton.svg" class="info-icon" onclick="hideandshow('card-3','card-3-info')"/></div>
+                </div>
+
+                <div class="info-card-info" id="card-3-info" style="display: none;">
+                    <h2>Como funciona</h2>
+                    <p>No vencimento do título, iniciará o recebimento mensal do valor corrigido ou o beneficiário poderá resgatar o valor total.</p>
+                    <div class="info-container-info"><img src="./content/asssets/information-button.svg" class="info-icon" onclick="hideandshow('card-3-info','card-3')"/></div>
+            </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="card mt-4" id="tela-normal" style="display: block;">
+
+            <div class="bottom-container">
+                <div class="col-half">
+                    <p class="px-4 mt-3 main-card-title"><img src="./content/asssets/education.svg" class="me-3"/>Campanha incentiva +</p>
+                    <div class="px-4 pb-4">
+                        <div class="card question-card">
+                            <p class="question-title">Quantos anos tem a criança hoje?</p>
+                            <div class="d-flex align-items-center">
+                                <img src="./content/asssets/misc--plus.svg" class="minus-icon" onclick="onMinus(1, 1, 'initial-age')">
+                                <span id="initial-age" class="qnt-label">5</span>
+                                <img src="./content/asssets/icon--circle--plus.svg" class="plus-icon" onclick="onPlus(18, 1, 'initial-age')">
+                            </div>
+                        </div>
+                        <div class="card question-card mt-2">
+                            <p class="question-title">Idade que começará na faculdade</p>
+                            <div class="d-flex align-items-center">
+                                <img src="./content/asssets/misc--plus.svg" class="minus-icon" onclick="onMinus(18, 1, 'start-age')">
+                                <span id="start-age" class="qnt-label">18</span>
+                                <img src="./content/asssets/icon--circle--plus.svg" class="plus-icon" onclick="onMinus(99, 1, 'start-age')">
+                            </div>
+                        </div>
+
+                        <div class="card question-card mt-2 last-question-card" id="info-value">
+                            <p class="question-title">Valor mensal a receber durante 
+                                o período da faculdade (5 anos) </p>
+                            <div class="d-flex align-items-center">
+                                <img src="./content/asssets/misc--plus.svg" class="minus-icon" onclick="onMinusMoney(500, 50, 'value-receive')">
+                                <span id="value-receive" class="qnt-label">1.500,00</span>
+                                <img src="./content/asssets/icon--circle--plus.svg" class="plus-icon" onclick="onPlusMoney(1000000, 50, 'value-receive')">
+                            </div>
+                            <img src="./content/asssets/informationbutton.svg" class="last-info-icon" onclick="hideandshowValue('info-value','info-value-info')"/>
+                        </div>
+
+                        <div class="value-info-card" id="info-value-info" style="display: none;">
+                            <p class="question-title">Pode ser levado em conta os custos da mensalidade, moradia, transporte e outros custos relacionados aos estudos.
+                                 O valor é disponibilizado mensalmente por 60 meses, podendo ser regatado a qualquer momento.</p>
+                            
+                            <img src="./content/asssets/information-button.svg" class="last-info-icon" onclick="hideandshowValue('info-value-info','info-value')"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-half d-flex flex-column pb-4" >
+                    <p class="container-title p-4 my-3 d-flex align-items-center" style="height: 48px;">Investimento indicado</p>
+
+
+                    <div class="px-4 flex-grow-1" id="alert-container">
+                        <div class="card px-4 h-100 d-flex justify-content-center align-items-center">
+                            <div class="second-card-container">
+                                <img src="./content/asssets/attentionmark-1.svg"/>
+                                <p class="mt-2">O título mais próximo não coincide com 
+                                    o início de recebimento desejado.</p>
+                                    
+                                <p>Mesmo assim você pode escolhe-lo.</p>
+                                <div class="d-flex flex-row align-items-center">
+                                    <input class="check-btn-accept" type="checkbox" id="scales" name="scales" >
+                                    <span class="ms-2">Ok, entendi</span></div>
+                                <button class="mt-4 btn-close" onclick="hideandshow('alert-container','tesouro')">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 flex-grow-1" id="tesouro" style="display: none;">
+                        <div class="invest-container">
+                        <div class="invest-card">
+                            <img src="./content/asssets/informationbutton.svg" class="info-icon" onclick="hideandshow('tela-normal','tela-more-info')"/>
+                            <div class="invest-card-left">
+                                <div>
+                                    <h3>TESOURO EDUCA+</h3>
+                                    <h4>2030</h4>
+                                </div>
+                                <p>Período de<br />recebimento</p>
+                                <p>Meta da<br />campanha</p>
+                                <p>Valor mínimo para apoio</p>
+                            </div>
+                            <div class="invest-card-right">
+                                <div>
+                                    <p>Rentabilidade</p>
+                                    <h6>IPCA + 6,43% (a.a.)</h6>
+                                </div>
+                                <div class="invest-card-date">
+                                    <div>
+                                        <h6>15/Jan/2030</h6>
+                                        <h7>inicio</h7>
+                                    </div>
+                                    <div>
+                                        <h6>15/Dez/2034</h6>
+                                        <h7>fim</h7>
+                                    </div>
+                                </div>
+                                <div class="invest-card-cotacao">
+                                    <base><b>100 Títulos</b> = R$ 300.00,00</base>
+                                    <p>Cotação hoje = R$ 300,00</p>
+                                </div>
+
+                                <b>R$ 30,00</b>
+                            </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="invest-card-footer">
+                            <img src="./content/asssets/icon--clock1.svg" class="info-icon"/>
+                            <p>Leva menos de 1 minuto</p>
+                            <button>Avançar</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card mt-4" id="tela-more-info" style="display: none;"> 
+            <div class="row" >
+                <div class="col-6 pe-0" style="padding-left: 36px;">
+                    <p class="px-4 mt-3 main-card-title"><img src="./content/asssets/porquinho1.svg" class="me-3"/>Meu porquinho</p>
+                    <div class="p-4 blue-container">
+                        <p class="more-info-title">Informações</p>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Preço unitário:</span>
+                            <span class="col-2-label mt-2">R$ 399,00</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Rentabilidade:</span>
+                            <span class="col-2-label mt-2">IPCA + 6,72 a.a.</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Valor mínimo para apoiar:</span>
+                            <span class="col-2-label mt-2">R$ 30,00</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Tempo de carência:</span>
+                            <span class="col-2-label mt-2">30 dias</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Data inicial:</span>
+                            <span class="col-2-label mt-2">15/01/2030</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Data final:</span>
+                            <span class="col-2-label mt-2">15/12/2034</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Número de amortizações:</span>
+                            <span class="col-2-label mt-2">240</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Horário para apoiar a campanha:</span>
+                            <span class="col-2-label mt-2">9h30 as 18h</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Tempo de liquidação: </span>
+                            <span class="col-2-label mt-2">1 dia útil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ps-0 d-flex flex-column pb-4" style="padding-right: 36px;">
+                    <p class="container-title p-4 my-3 d-flex align-items-center" style="height: 48px;">Investimento indicado</p>
+                    <div class="p-4 flex-grow-1 blue-container position-relative">
+                        <img src="./content/asssets/information-button.svg" class="info-absolute-icon" onclick="hideandshow('tela-normal','tela-more-info')"/>
+                        <p class="more-info-title">custos</p>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label bold-700">Taxas de custódia B3 sobre a venda antecipada</span>
+                            <span class="col-2-label"></span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">De 0 à 10 anos:</span>
+                            <span class="col-2-label mt-2">0,50% a.a.</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between align-items-end">
+                            <span class="col-1-label mt-2">De 10 à 20 anos:</span>
+                            <span class="col-2-label mt-2">0,20% a.a.</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">De 20 à 30 anos:</span>
+                            <span class="col-2-label mt-2">0,10% a.a.</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between bold-700">
+                            <span class="col-1-label mt-3">Taxas de custódia B3 sobre o excedente da renda mensal</span>
+                            <span class="col-2-label mt-3"></span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Até 6 salários mínimos:</span>
+                            <span class="col-2-label mt-2">0% a.a.</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-2">Acima de 6 salários mínimos:</span>
+                            <span class="col-2-label mt-2">0,10% a.a.</span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label mt-3">IR previsto sobre os rendimentos de 22,5% a 15%.</span>
+                            <span class="col-2-label mt-3"></span>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <span class="col-1-label">Taxa de IOF isenta após 30 dias.</span>
+                            <span class="col-2-label"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+ 

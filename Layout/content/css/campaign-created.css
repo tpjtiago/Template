@@ -1,0 +1,126 @@
+
+.card-title {
+  color: #182940;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-subtitle {
+  color: #666;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-txt-highlighted {
+  color: #182940;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.link-text {
+  color: #000;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.url-text {
+  color: #000;
+  text-align: right;
+  font-family: Source Sans Pro;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.created-card {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.btn-share {
+  border-radius: 23.5px;
+  padding: 8px 32px 8px 24px;
+  background: #237131;
+  border-color: #237131;
+}
+
+.campaign-details-card {
+  padding: 24px;
+}
+
+.campaign-details-inner-card {
+  padding: 18px 0;
+}
+
+.campaign-details-inner-card p {
+  margin: 0;
+}
+
+.campaign-details-inner-card .inner-campaign-type {
+  color: #2B59C3;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  text-transform: uppercase;
+}
+
+.campaign-details-inner-card .inner-campaign-enddate {
+  color: #2B59C3;
+  font-family: Source Sans Pro;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 107.143% */
+}
+
+.campaign-details-inner-card .info-cell {
+  color: #000;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.campaign-details-inner-card .data-cell {
+  color: #2B59C3;
+  margin-top: 8px;
+}
+
+.btn-campaign-action {
+  padding: 12px 32px;
+  border-radius: 23.5px;
+}
+
+
+.campaign-details-card .btn-primary {
+  background: #2B59C3;
+}
+
+.campaign-details-card .btn-light {
+  border-color: #2B59C3;
+  color: #2B59C3;
+}
+
+.rectangle {
+  width: 8px;
+  border-radius: 0px 50px 50px 0px;
+  background: #2B59C3;
+}

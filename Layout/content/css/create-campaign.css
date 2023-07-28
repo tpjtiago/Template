@@ -1,0 +1,106 @@
+
+.accordion-campaign .campaign-title {
+  color: #2B59C3;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  text-transform: uppercase;
+}
+
+.accordion-campaign .campaign-year {
+  color: #2B59C3;
+  font-family: Source Sans Pro;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 130.435% */
+}
+
+.accordion-campaign .campaign-details-accordion-btn {
+  background-color: white;
+  width: auto;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-campaign .see-details {
+  color: #2B59C3;
+  text-align: right;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+.card-title {
+  color: #182940;
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form-label {
+  color: #182940;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card .card-body input {
+  padding: 16px;
+}
+
+.card .card-body textarea {
+  padding: 16px;
+}
+
+.card .card-body select {
+  padding: 16px;
+}
+
+.card .card-body .form-check-input {
+  width: 18px;
+  padding: 0;
+  height: 18px;
+  border-radius: 2px;
+  border: 2px solid var(--m-3-sys-light-on-surface-variant, #49454F);
+}
+
+.card .card-body .form-check-label {
+  color: #666;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card .card-body .btn-primary {
+  border-radius: 23.5px;
+  background: #2B59C3;
+  display: flex;
+  width: 153px;
+  padding: 12px 43px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .card-body .btn-light {
+  display: flex;
+  width: 153px;
+  padding: 12px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 23.5px;
+  border: 1px solid #2B59C3;
+  color: #2B59C3;
+}
